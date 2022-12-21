@@ -100,3 +100,27 @@ df_consolidated.to_excel("destination/file/path/and/file_name.xlsx", index=False
 * To save the consolidated data to a different location or with a different file name, change the value of the to_excel() function.
 * To specify different file types to be processed, modify the if statement that checks the file extension.
 * To skip subfolders or files with certain names, use an if statement to check the folder or file name before processing the data.
+
+====
+
+Draft 2
+
+Requirements
+Python 3
+pandas library
+Usage
+Set the master_folder_path variable to the path of the master folder containing the subfolders and files.
+Run the code.
+The code will:
+
+Iterate through the subfolders in the master folder.
+Iterate through the CSV files in the subfolder.
+Read the CSV file into a dataframe.
+Convert the dataframe to an Excel file.
+Add the file and folder information to the dataframe.
+Add the dataframe to a list of dataframes.
+Concatenate all the dataframes in the list into a single dataframe.
+Write the consolidated data to an Excel file.
+Notes
+The code will skip files that are not CSV or Excel files.
+If there are no subfolders in the master folder, the code will read the files in the main folder.
